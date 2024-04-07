@@ -1,0 +1,25 @@
+pipeline {
+    agent any
+    stages {
+        stage('Запуск скрипта создания данных') {
+            steps {
+                sudo python3 data_creation.py
+            }
+        }
+        stage('Запуск скрипта предобработки данных') {
+            steps {
+                sudo python3 model_preprocessing.py
+            }
+        }
+        stage('Запуск скрипта подготовки и обучения модели') {
+            steps {
+                sudo python3 model_preparation.py
+            }
+        }
+        stage('Запуск скрипта тестирования модели') {
+            steps {
+                sudo python3 model_testing.py
+            }
+        }
+    }
+}
