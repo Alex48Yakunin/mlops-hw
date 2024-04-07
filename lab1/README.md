@@ -13,4 +13,4 @@ pip install numpy pandas sklearn joblib
 
 ### Запуск всего процесса
 
-из директории проекта выполнить в терминале /.pipeline.sh
+из директории lab1 выполнить в терминале /.pipeline.sh
