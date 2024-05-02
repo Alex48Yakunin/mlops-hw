@@ -1,0 +1,4 @@
+[core]
+    remote = mlopslab4
+['remote "mlopslab4"']
+    url = gdrive://10x6PAV3gSZ9_C3UWaMCBNVb5xNBQJa9R
